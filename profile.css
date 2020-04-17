@@ -1,0 +1,308 @@
+/* aoliadi,2020 */
+/* connect with me on ao.liadiahmed@gmail.com */
+
+/* font-family: OdorMeanChey; */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background:url("images/bg-image.jpg") no-repeat scroll;
+    background-size:cover;
+    color:#F4F3EB;
+    border:none;
+    outline:none;
+}
+
+main {
+    width:75%;
+    margin:56px auto;
+    /* border:2px solid red; */
+}
+
+/* 
+===================
+FOR ALL HEADINGS
+===================
+ */
+ h1, h2, h3, h4, h5, h6 {
+    text-transform:uppercase;
+    font-size:45px;
+}
+
+/* 
+==================
+FOR COLOR STYLES
+==================
+ */
+ nav, button {
+    background-color:#0B141D;
+}
+
+table, .about-me p, .contact-form h3, .contact-form label,
+.contact-form[input="text"], .hobbie-interest p {
+    color:#0B141D;
+}
+
+.profile-picture-container, .info-fieldset, .contact-form {
+    background-color:#F4F3EB;
+}
+
+.about-me, .hobbie-interest {
+    background: #7DC9E7;
+}
+
+/* 
+=====================
+FOR COMMON PROPERTIES
+=====================
+ */
+ .profile-picture-container,  .info-fieldset,  
+ .about-me, .hobbie-interest, .contact-form {
+    height: auto;
+    margin-top:30px;
+    padding:40px;
+ }
+
+ /*      
+====================
+FOR FLEX PROPERTIES
+====================
+ */
+.pic-and-info, .about-hobbie-interest, nav, .contact-form {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+}
+
+/* 
+===================
+FOR NAVIGATION BAR
+===================
+ */
+ nav {
+    opacity:.75;
+    position: absolute;
+    width: 1440px;
+    height: 62px;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:62px;
+}
+
+nav img {
+    margin-left:50px;
+}
+
+nav ul {
+    list-style-type:none;
+    position:absolute;
+    right:0;
+}
+
+nav ul li {
+    display:inline;
+    margin-right: 50px;
+    font-family:Rationale, sans-serif;
+    font-size:25px;
+}
+
+/* 
+=========================
+FOR INFORMATION CONTAINER
+=========================
+ */
+
+.profile-picture-container {
+    width: 335px;
+    border-radius:35px 35px 35px 0;
+ }
+
+ .info-fieldset {
+    max-width: 893px;
+    font-size: 25px;
+    padding:15px;
+    border-radius:35px 35px 0 35px;
+}
+
+table {
+    /* border:2px solid cyan; */
+}
+
+table tr {
+    line-height: 50px;
+}
+
+td:last-child {
+    padding-left:112px;
+}
+
+/* 
+===============================
+FOR ABOUT ME AND HOBBIE SECTION
+===============================
+ */
+ .about-me {
+    width: 726px;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.about-me p {
+    max-width: 614px;
+    height: 262px;
+    margin-top:15px;
+    font-size:25px;
+    line-height:35px;
+}
+
+.hobbie-interest {
+    width: 503px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.hobbie-interest h3 {
+    margin-bottom:14px;
+    text-align:right;
+    /* border:2px solid blue; */
+}
+
+.hobbie-interest h3:nth-child(even) {
+    margin-top:25px;
+}
+
+.hobbie-interest p {
+    text-align:right;
+    font-size:25px;
+    text-transform: uppercase;
+}
+
+/*      
+=================
+FOR CONTACT FORM
+=================
+ */
+ .contact-form {
+    max-width:100%;
+    border-radius: 0px 0px 35px 35px;
+}
+
+.input-1 {
+    width:50%;
+}
+
+.input-2 {
+    width:30%;
+}
+
+input[type="text"] {
+    width:100%;
+    height:51px;
+    margin-bottom:0.8em;
+    font-size:18px;
+}
+
+textarea, input[type="text"] {
+    outline:none;
+    border:none;
+    background-color:#7DC9E7;
+    padding:10px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+textarea {
+    font-size:14px;
+}
+
+label {
+    margin-right:40px;
+    font-size:22px;
+    /* border:2px solid cyan; */
+    width:110px;
+}
+
+label::after {
+    content:"";
+    margin-bottom:0.8em;
+    display:block;
+    /* clear:both; */
+}
+
+/*      
+====================
+FOR FOOTER
+====================
+ */
+ hr {
+    border:5px solid #F4F3EB;
+    width:33.3333%;
+    border-radius:5px;
+    margin:0 auto;
+}
+
+footer ul {
+    display:flex;
+    flex-flow:row wrap;
+    list-style-type: none;
+}
+
+footer ul span{
+    margin:0 auto;
+}
+
+footer ul span li {
+    display:inline;
+    margin:0 0 50px 50px;
+}
+
+button {
+    padding:10px;
+    width:120px;
+    border:none;
+    outline:none;
+    background-color: ;
+    color:#F4F3EB;
+    border-radius:5px;
+}
+
+button:hover {
+    background-color: transparent;
+    border:3px solid #FFBE86;
+    color:#0B141D;
+}
+
+/*      
+====================
+FOR SMALLER DEVICES
+====================
+ */
+@media(max-width:1650px) {
+    .pic-and-info, .about-hobbie-interest, nav, .contact-form {
+        justify-content: center;
+    }
+
+    .about-me, .hobbie-interest,  .contact-form,
+    .profile-picture-container,  .info-fieldset {
+        border-radius: 0;
+    }
+
+    .profile-picture-container {
+        height:397px;
+    }
+   
+}
+
+@media(max-width:800px) {
+    body {
+        background-size: center;
+    }
+
+    footer ul span li {
+        display:block;
+    }
+}
+
