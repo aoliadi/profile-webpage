@@ -3,6 +3,8 @@
 
 /* font-family: OdorMeanChey; */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rationale&display=swap');
+
 * {
     margin:0;
     padding:0;
@@ -15,6 +17,7 @@ body {
     color:#F4F3EB;
     border:none;
     outline:none;
+    font-family:"Open Sans", sans-serif;
 }
 
 main {
